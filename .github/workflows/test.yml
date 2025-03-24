@@ -16,7 +16,7 @@ jobs:
           node-version: 18 # Installs Node.js version 18.
 
       - name: Install dependencies # Step 3: Installs project dependencies.
-        run: npm ci # Runs "npm ci" to install dependencies from package-lock.json.
+        run: npm install # Runs "npm ci" to install dependencies from package-lock.json.
 
       - name: Run tests # Step 4: Executes test cases.
         run: npm test # Runs "npm test" to execute defined test scripts.
